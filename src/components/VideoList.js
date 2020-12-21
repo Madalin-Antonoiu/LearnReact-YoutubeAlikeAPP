@@ -1,12 +1,12 @@
 import React from "react";
 import VideoItem from "./VideoItem";
 
-const VideoList = ({ videos }) => {
+const VideoList = ({ videos, onVideoSelect }) => {
   //1. props.videos gets passed from App component
   //2. <div>{props.videos.length}</div>;
 
   const renderedList = videos.map((video) => {
-    return <VideoItem video={video} />;
+    return <VideoItem video={video} onVideoSelect={onVideoSelect} />;
   });
 
   //return <div>{videos.length}</div>;
