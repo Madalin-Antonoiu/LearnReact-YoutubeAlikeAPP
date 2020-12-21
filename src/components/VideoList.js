@@ -10,7 +10,7 @@ const VideoList = ({ videos }) => {
   });
 
   //return <div>{videos.length}</div>;
-  return <div>{renderedList}</div>;
+  return <div className="ui relaxed divided list">{renderedList}</div>;
 };
 
 export default VideoList;
