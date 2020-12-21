@@ -6,7 +6,13 @@ const VideoList = ({ videos, onVideoSelect }) => {
   //2. <div>{props.videos.length}</div>;
 
   const renderedList = videos.map((video) => {
-    return <VideoItem video={video} onVideoSelect={onVideoSelect} />;
+    return (
+      <VideoItem
+        video={video}
+        onVideoSelect={onVideoSelect}
+        key={video.id.videoId}
+      />
+    );
   });
 
   //return <div>{videos.length}</div>;
